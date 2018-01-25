@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <style>
+  body {
+  font-family: "Lato", sans-serif;
+  background-image: url("http://cdn.wall-pix.net/albums/art-photography/00028286.jpg");
+  background-attachment:fixed;
+  background-size:cover;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="photography.html">Photography</a>
+  <a href="about.html">About</a>
+  <a href="film.html">Film</a>
+
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px; display:none;" id="div1" >I am Roger</h1>
+      <p id="div2" style="display:none;">I'm a Photographer</p>
+      <p id="div3" style="display:none;">Director</p>
+      <p id="div4" style="display:none;">Self Proclaimed Movie Roaster</p>
+
+    </div>
+    <br>
+    <button id="hero-button">Who am I</button>
+  </div>
+
+
+
+<div id="footer">
+<p id="leftAside"> Designed by Jessie Castellanos</p>
+
+
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn(9000);
+        $("#div2").fadeIn(13000);
+        $("#div3").fadeIn(17000);
+        $("#div4").fadeIn(22000);
+    });
+});
+</script>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+    document.getElementById("body").innerHTML = Date();
+}
+</script>
+
+  </body>
+</html>
