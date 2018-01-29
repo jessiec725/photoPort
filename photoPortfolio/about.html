@@ -6,7 +6,23 @@
     <title>title</title>
   <link rel="stylesheet" href="stylesheet2.css" type="text/css">
   </head>
-  <body>
+  <style>
+  .grid-container {
+display: grid;
+grid-template-columns: 60% 40%;
+grid-template-rows: 100%;
+
+
+
+}
+.grid-item {
+background-color: white;
+
+font-size: 30px;
+text-align: center;
+
+}
+  </style>
 
 </head>
 <body>
@@ -19,12 +35,16 @@
 
 </div>
 
-<div id="main">
-  <h2></h2>
+<div class="grid-container">
+      <div class="grid-item"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/14441155_10154395638195943_8966528620974472850_n.jpg?oh=9f119172ce3d3a1a0afb78e9e8a82059&oe=5B1AD15F" width="900px" height="100%" ></div>
+      <div class="grid-item" style="margin-right: 100px">
+      <h1>Roger</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit lorem nec turpis blandit, vitae tempor dolor ultricies. Suspendisse a faucibus tortor, ac efficitur elit. Ut fermentum mauris nec eros posuere, sit amet venenatis lacus tincidunt. Nam ullamcorper venenatis dui, sed malesuada neque. Proin et volutpat turpis, pulvinar convallis leo. Ut ligula est, aliquam nec est eu, venenatis ullamcorper sem. Sed quis viverra arcu. Fusce dictum nunc leo, sed cursus mauris porttitor at. Donec non facilisis eros, non posuere est. Etiam maximus ex ut nisi ultrices, at auctor mi bibendum. Maecenas pulvinar nisl ac efficitur cursus.
 
-  
+Integer gravida luctus nibh, quis gravida justo viverra a. Ut porta mi est, ac ornare nisl egestas a. Vivamus non laoreet est. Aliquam a elit eget nibh scelerisque rutrum eget id risus. Sed vehicula nisi eu eros dignissim ultrices. Phasellus tellus tellus, lobortis sed vulputate vitae, malesuada quis lorem. Phasellus eget orci cursus, scelerisque neque dapibus, sagittis ex. In fringilla ac ligula id facilisis.</p>
+      </div>
+
 </div>
-
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
