@@ -117,15 +117,17 @@ iPad 3
 }
 
 #hero-button {
-  
-  border: none;
+
+  border: 3px solid white;
   outline: 0;
   padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
+  color: white;
+  background-color: transparent;
   text-align: center;
   cursor: pointer;
-  display:inline;
+  display:inline-block;
+  margin-right: 190px;
+  margin-top: 220px;
 
 
 
