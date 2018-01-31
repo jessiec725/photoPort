@@ -21,7 +21,10 @@ padding: 20px;
 font-size: 30px;
 text-align: center;
 }
+
+
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
 
@@ -49,28 +52,146 @@ text-align: center;
 
 <div id="main">
   <div class="grid-container">
-        <div class="grid-item"><img src="https://farm2.staticflickr.com/1443/25852412696_1e4843b4a9_z.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://4.bp.blogspot.com/-bahoT9-tRn4/UYQmxSCtFdI/AAAAAAAAA6s/QQzILTQba18/s1600/art-camera-cool-photography-toy-Favim.com-446299.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://i.pinimg.com/736x/73/a3/b3/73a3b33deda75f89c680116812928dd6--clarks-ocean-waves.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://s3.india.com/travel/wp-content/uploads/2015/11/travel-photography-tips1.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://www.shutterbug.com/images/1216frame001.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://mycoolhomepage.com/wp-content/uploads/2015/03/jane-field-lewis-cool-photography-how-to-take-cool-photographs-636x310.gif" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://favim.com/orig/201108/27/coca-in-life-coke-cool-photography-Favim.com-132016.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://s1.favim.com/orig/26/cool-photography-pink-pool-spray-Favim.com-226316.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://www.bollywoodshaadis.com/img-scale/670/article-20151236311563142991000.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://envato-shoebox-0.imgix.net/2a41/93b3-6f8b-4f1c-8767-cd9772b4ded7/kave+310.jpg?w=500&h=278&fit=crop&crop=edges&auto=compress%2Cformat&s=fbc0d75299d7cfda0b3c60ea52ba4aaf" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://wallup.net/wp-content/uploads/2017/11/10/138645-camera-748x421.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://www.wallmaya.com/wp-content/uploads/2016/02/photography-camera-wallpaper-hd-full-hd.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://webneel.com/daily/sites/default/files/images/daily/09-2013/30-amazing-photos-motion-blur-night.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://cdn.images.express.co.uk/img/dynamic/109/590x/camera-701696.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://lightartacademy.com/blog/wp-content/uploads/2016/08/camera-photography-camera_766bfa06-651b-11e6-b7cc-991406f1fe11.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://www.colosseumpretoria.com/wp-content/uploads/2017/05/photography_2.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="http://www.anotherblog.net/wp-content/uploads/2017/08/Jonathan-Fanning-Studio-Gallery.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://cdn.lynda.com/course/439679/439679-635937276346602321-16x9.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://cdn.fstoppers.com/styles/full/s3/lead/2016/03/stop-waiting-for-your-photography-portfolio-to-be-good-enough-to-show-the-world.jpg" width="300px" height="175px"></div>
-        <div class="grid-item"><img src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2016/07/leannecole-winter-photography-queenstown.jpg?fit=750%2C501&ssl=1" width="300px" height="175px"></div>
+        <div class="grid-item" ><img src="https://farm2.staticflickr.com/1443/25852412696_1e4843b4a9_z.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" width="300px" height="175px" ></div>
+        <div class="grid-item" ><img  src="http://4.bp.blogspot.com/-bahoT9-tRn4/UYQmxSCtFdI/AAAAAAAAA6s/QQzILTQba18/s1600/art-camera-cool-photography-toy-Favim.com-446299.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" width="300px" height="175px" ></div>
+        <div class="grid-item" ><img src="https://i.pinimg.com/736x/73/a3/b3/73a3b33deda75f89c680116812928dd6--clarks-ocean-waves.jpg"onclick="openModal();currentSlide(3)" class="hover-shadow cursor" width="300px" height="175px" ></div>
+        <div class="grid-item" ><img src="http://s3.india.com/travel/wp-content/uploads/2015/11/travel-photography-tips1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" width="300px" height="175px" ></div>
+        <div class="grid-item" ><img src="https://www.shutterbug.com/images/1216frame001.jpg"onclick="openModal();currentSlide(5)" class="hover-shadow cursor"  width="300px" height="175px"></div>
+        <div class="grid-item"><img src="http://mycoolhomepage.com/wp-content/uploads/2015/03/jane-field-lewis-cool-photography-how-to-take-cool-photographs-636x310.gif"onclick="openModal();currentSlide(6)" class="hover-shadow cursor" width="300px" height="175px"></div>
+        <div class="grid-item"><img src="https://favim.com/orig/201108/27/coca-in-life-coke-cool-photography-Favim.com-132016.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="https://s1.favim.com/orig/26/cool-photography-pink-pool-spray-Favim.com-226316.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="http://www.bollywoodshaadis.com/img-scale/670/article-20151236311563142991000.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="https://envato-shoebox-0.imgix.net/2a41/93b3-6f8b-4f1c-8767-cd9772b4ded7/kave+310.jpg?w=500&h=278&fit=crop&crop=edges&auto=compress%2Cformat&s=fbc0d75299d7cfda0b3c60ea52ba4aaf"onclick="openModal();currentSlide(10)" class="hover-shadow cursor" width="300px" height="175px"></div>
+        <div class="grid-item"><img src="https://wallup.net/wp-content/uploads/2017/11/10/138645-camera-748x421.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="http://www.wallmaya.com/wp-content/uploads/2016/02/photography-camera-wallpaper-hd-full-hd.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="http://webneel.com/daily/sites/default/files/images/daily/09-2013/30-amazing-photos-motion-blur-night.jpg"onclick="openModal();currentSlide(13)" class="hover-shadow cursor" width="300px" height="175px"></div>
+        <div class="grid-item"><img src="https://cdn.images.express.co.uk/img/dynamic/109/590x/camera-701696.jpg"onclick="openModal();currentSlide(14)" class="hover-shadow cursor" width="300px" height="175px"></div>
+        <div class="grid-item"><img src="http://lightartacademy.com/blog/wp-content/uploads/2016/08/camera-photography-camera_766bfa06-651b-11e6-b7cc-991406f1fe11.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="http://www.colosseumpretoria.com/wp-content/uploads/2017/05/photography_2.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="http://www.anotherblog.net/wp-content/uploads/2017/08/Jonathan-Fanning-Studio-Gallery.jpg"onclick="openModal();currentSlide(17)" class="hover-shadow cursor" width="300px" height="175px"></div>
+        <div class="grid-item"><img src="https://cdn.lynda.com/course/439679/439679-635937276346602321-16x9.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="https://cdn.fstoppers.com/styles/full/s3/lead/2016/03/stop-waiting-for-your-photography-portfolio-to-be-good-enough-to-show-the-world.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow cursor"width="300px" height="175px"></div>
+        <div class="grid-item"><img src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2016/07/leannecole-winter-photography-queenstown.jpg?fit=750%2C501&ssl=1" onclick="openModal();currentSlide(20)" class="hover-shadow cursor"width="300px" height="175px"></div>
 
         </div>
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 20</div>
+      <img src="https://farm2.staticflickr.com/1443/25852412696_1e4843b4a9_z.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 20</div>
+      <img src="http://4.bp.blogspot.com/-bahoT9-tRn4/UYQmxSCtFdI/AAAAAAAAA6s/QQzILTQba18/s1600/art-camera-cool-photography-toy-Favim.com-446299.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 20</div>
+      <img src="https://i.pinimg.com/736x/73/a3/b3/73a3b33deda75f89c680116812928dd6--clarks-ocean-waves.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 20</div>
+      <img src="http://s3.india.com/travel/wp-content/uploads/2015/11/travel-photography-tips1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 20</div>
+      <img src="https://www.shutterbug.com/images/1216frame001.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 20</div>
+      <img src="http://mycoolhomepage.com/wp-content/uploads/2015/03/jane-field-lewis-cool-photography-how-to-take-cool-photographs-636x310.gif" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 20</div>
+      <img src="https://favim.com/orig/201108/27/coca-in-life-coke-cool-photography-Favim.com-132016.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 20</div>
+      <img src="https://s1.favim.com/orig/26/cool-photography-pink-pool-spray-Favim.com-226316.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 20</div>
+      <img src="http://www.bollywoodshaadis.com/img-scale/670/article-20151236311563142991000.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 20</div>
+      <img src="https://envato-shoebox-0.imgix.net/2a41/93b3-6f8b-4f1c-8767-cd9772b4ded7/kave+310.jpg?w=500&h=278&fit=crop&crop=edges&auto=compress%2Cformat&s=fbc0d75299d7cfda0b3c60ea52ba4aaf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 20</div>
+      <img src="https://wallup.net/wp-content/uploads/2017/11/10/138645-camera-748x421.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 20</div>
+      <img src="http://www.wallmaya.com/wp-content/uploads/2016/02/photography-camera-wallpaper-hd-full-hd.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 20</div>
+      <img src="http://webneel.com/daily/sites/default/files/images/daily/09-2013/30-amazing-photos-motion-blur-night.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 20</div>
+      <img src="https://cdn.images.express.co.uk/img/dynamic/109/590x/camera-701696.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 20</div>
+      <img src="http://lightartacademy.com/blog/wp-content/uploads/2016/08/camera-photography-camera_766bfa06-651b-11e6-b7cc-991406f1fe11.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 20</div>
+      <img src="http://www.colosseumpretoria.com/wp-content/uploads/2017/05/photography_2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">17 / 20</div>
+      <img src="http://www.anotherblog.net/wp-content/uploads/2017/08/Jonathan-Fanning-Studio-Gallery.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">18 / 20</div>
+      <img src="https://cdn.lynda.com/course/439679/439679-635937276346602321-16x9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">19 / 20</div>
+      <img src="https://cdn.fstoppers.com/styles/full/s3/lead/2016/03/stop-waiting-for-your-photography-portfolio-to-be-good-enough-to-show-the-world.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">20 / 20</div>
+      <img src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2016/07/leannecole-winter-photography-queenstown.jpg?fit=750%2C501&ssl=1" style="width:100%">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+
 
 </div>
 <div id="footer">
@@ -82,7 +203,44 @@ text-align: center;
 <a href="#" class="fa fa-snapchat-ghost"></a>
 
 </div>
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
 
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
   </body>
 </html>
